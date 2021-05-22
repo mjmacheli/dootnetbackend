@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Checkout Repo
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       - name: Build docker image
-      - run: docker build . -t ghcr.io/mjmacheli/dotnet-be:${{ github.sha }}
+        run: docker build . -t ghcr.io/mjmacheli/dotnet-be:${{ github.sha }}

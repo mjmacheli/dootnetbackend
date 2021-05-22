@@ -1,0 +1,25 @@
+name: build image
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  build-image:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+      - uses: actions/checkout@v2
+
+      - name: Build docker image
+        run: docker build . -t ghcr.io/mjmacheli/dotnet-be:${{ github.sha }}
+
+#       - name: Run a multi-line script
+#         run: |
+#           echo Add other actions to build,
+#           echo test, and deploy your project.

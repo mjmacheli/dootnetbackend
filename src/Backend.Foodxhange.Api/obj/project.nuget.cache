@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "jFzTc6z2N58hVkdYLg25HdAhlXZeuykuuTHIs0r6GPhPD4GBQOzj4FD3y6BePA/6NwQ2PjIdh4QB/Y6XHV5NBg==",
+  "success": true,
+  "projectFilePath": "/Users/mjmacheli/Documents/code/web/FoodxchangeBe/src/Backend.Foodxhange.Api/Backend.Foodxhange.Api.csproj",
+  "expectedPackageFiles": [
+    "/Users/mjmacheli/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/mjmacheli/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/mjmacheli/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "/Users/mjmacheli/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "/Users/mjmacheli/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.3/swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "/Users/mjmacheli/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.3/swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

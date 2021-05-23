@@ -26,7 +26,7 @@ jobs:
         uses: azure/container-scan@v0
         with:
           image-name: ${{ env.image-name }}
-          severity-threshold: HIGH
+          severity-threshold: MEDUM
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GH_R }}
       

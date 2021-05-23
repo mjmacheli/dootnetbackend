@@ -22,4 +22,6 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENV ASPNETCORE_URLS=http://+:8080
+HEALTHCHECK --interval=60s --timeout=3s --retries=3 \
+    CMD wget localhost:8080/health -q -O - > /dev/null 2>&1
 ENTRYPOINT ["dotnet", "Backend.Foodxhange.Api.dll"]

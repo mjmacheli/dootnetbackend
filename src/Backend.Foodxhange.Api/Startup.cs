@@ -28,6 +28,8 @@ namespace Backend.Foodxhange.Api
         {
 
             services.AddControllers();
+            services.AddHealthChecks();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Backend.Foodxhange.Api", Version = "v1" });
@@ -53,6 +55,7 @@ namespace Backend.Foodxhange.Api
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHealthChecks("/health");
             });
         }
     }
